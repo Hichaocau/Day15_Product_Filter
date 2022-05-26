@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s linear;
+}
+
+body {
+	background-color: #dadada;
+	font-family: 'Roboto', sans-serif;
+	height: 100vh;
+	width: 100%;
+}
+
+.container {
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	width: 400px;
+	margin: 80px auto;
+	background-color: #fff;
+  padding: 20px 15px;
+	overflow: hidden;
+  text-align: center;
+}
+
+.search{
+  border: 1px solid #000;
+  padding: 5px 10px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  margin: 20px 0 30px;
+  border-radius: 8px;
+}
+
+.search input{
+  width: 100%;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+}
+
+.products{
+  height: 450px;
+  overflow-y: scroll;
+}
+
+/* width */
+.products::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+/* Track */
+.products::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+/* Handle */
+.products::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+.products::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.product{
+  display: flex;
+  height: 140px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.product:hover{
+  background-color: #dadada;
+}
+
+.product img{
+  min-width: 100px;
+  width: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.info{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.info p {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.hide{
+  display: none;
+}
